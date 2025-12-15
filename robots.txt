@@ -1,0 +1,17 @@
+# Robots.txt for Bluesky Cleaning Service
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Sitemap
+Sitemap: https://www.blueskycleaning.be/sitemap.xml
+
+# Crawl-delay (optional, adjust if needed)
+Crawl-delay: 1
+
+# Disallow any admin or private areas (add as needed)
+# Disallow: /admin/
+# Disallow: /private/

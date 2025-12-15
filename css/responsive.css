@@ -1,0 +1,464 @@
+/* Responsive Styles for Bluesky Cleaning Service */
+
+/* Tablets and below (1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .about-grid {
+        gap: 40px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile Landscape and Tablets (768px) */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-wrapper {
+        padding: 16px 0;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--bg-white);
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: var(--shadow-lg);
+        transform: translateX(-100%);
+        transition: var(--transition);
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 80vh;
+        padding: 100px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-features {
+        gap: 15px;
+    }
+
+    .feature-badge {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    /* Sections */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .feature-number {
+        font-size: 2rem;
+    }
+
+    .feature-text {
+        font-size: 0.85rem;
+    }
+
+    /* Pricing */
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pricing-card.featured {
+        transform: scale(1);
+    }
+
+    .pricing-card.featured:hover {
+        transform: translateY(-8px);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Cookie Consent */
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cookie-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Portrait (480px) */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-icon {
+        font-size: 1.5rem;
+    }
+
+    /* Language Switcher */
+    .language-switcher {
+        gap: 4px;
+        padding: 3px;
+    }
+
+    .lang-btn {
+        padding: 4px 8px;
+        font-size: 0.85rem;
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 1.75rem;
+        margin-bottom: 16px;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .feature-badge {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+
+    .btn-lg {
+        padding: 14px 28px;
+        font-size: 1rem;
+    }
+
+    /* Services */
+    .service-icon {
+        font-size: 2.5rem;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+    }
+
+    /* About */
+    .about-features {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .feature-number {
+        font-size: 2.5rem;
+    }
+
+    .feature-text {
+        font-size: 1rem;
+    }
+
+    /* Pricing */
+    .amount {
+        font-size: 3rem;
+    }
+
+    .pricing-name {
+        font-size: 1.5rem;
+    }
+
+    /* Contact */
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        padding: 20px 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    /* Cookie Consent */
+    .cookie-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .cookie-buttons .btn {
+        width: 100%;
+    }
+}
+
+/* Very Small Devices (360px) */
+@media screen and (max-width: 360px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .amount {
+        font-size: 2.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .mobile-menu-toggle,
+    .language-switcher,
+    .cookie-consent,
+    .btn,
+    .contact-form {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20px 0;
+        background: none;
+    }
+
+    .hero-content {
+        color: #000;
+    }
+
+    section {
+        padding: 20px 0;
+        page-break-inside: avoid;
+    }
+
+    .service-card,
+    .pricing-card {
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-outline {
+        border-width: 3px;
+    }
+
+    .service-card,
+    .pricing-card {
+        border-width: 3px;
+    }
+
+    .nav-link::after {
+        height: 3px;
+    }
+}
+
+/* Dark Mode Support (if system prefers dark mode) */
+@media (prefers-color-scheme: dark) {
+    /* Users can uncomment this section if they want automatic dark mode */
+    /*
+    :root {
+        --text-dark: #f8fafc;
+        --text-light: #cbd5e1;
+        --bg-white: #1e293b;
+        --bg-light: #0f172a;
+        --bg-gray: #334155;
+        --border-color: #475569;
+    }
+
+    .navbar {
+        background: rgba(15, 23, 42, 0.95);
+    }
+
+    .service-card,
+    .pricing-card,
+    .contact-form {
+        background: #1e293b;
+    }
+    */
+}
+
+/* Landscape Orientation */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        min-height: auto;
+        padding: 80px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-features {
+        margin-top: 20px;
+    }
+}
+
+/* Focus Styles for Accessibility */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .nav-link {
+        padding: 12px 0;
+    }
+
+    .lang-btn {
+        min-height: 36px;
+        min-width: 36px;
+    }
+}
